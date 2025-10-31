@@ -1,0 +1,112 @@
+/* App.css */
+.app-container {
+  min-height: 100vh;
+  background: #f5f6fa;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Content area */
+.content-wrapper {
+  padding: 20px;
+}
+
+/* Overlay (gray background behind form) */
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Form popup */
+.form-popup {
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* FAB button */
+.add-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #004a99;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-btn:hover {
+  background-color: #0065cc;
+}
+
+/* Feedback cards grid layout */
+.feedback-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Each feedback card */
+.feedback-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 16px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.feedback-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Delete button inside card */
+.delete-btn {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.delete-btn:hover {
+  background-color: #c5303c;
+}
+
+.no-feedback-text {
+  text-align: center;
+  color: #555;
+  margin-top: 40px;
+  font-size: 18px;
+}
